@@ -38,6 +38,10 @@ class BubbleSortTest < Minitest::Test
 
   end
 
+  def test_sorts_when_multiple_passes_are_required
+    assert_equal [1,2,3], bubble_sort([3,2,1])
+  end
+
   # def test_it_returns_the_correct_value
   #   bubble = BubbleSort.new
   #   input = [5, 3, 2, 4, 1]

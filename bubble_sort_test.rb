@@ -42,6 +42,15 @@ class BubbleSortTest < Minitest::Test
     assert_equal [1,2,3], bubble_sort([3,2,1])
   end
 
+  def test_sorts_something_more_complicated
+    assert_equal [1,2,3,4,5,6], bubble_sort([4,1,2,6,5,3])
+  end
+
+  def test_sorts_long_list
+    list = (1..600).to_a.shuffle
+    assert_equal list.sort, bubble_sort(list)
+  end
+
   # def test_it_returns_the_correct_value
   #   bubble = BubbleSort.new
   #   input = [5, 3, 2, 4, 1]

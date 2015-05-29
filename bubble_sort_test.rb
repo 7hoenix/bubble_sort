@@ -6,8 +6,7 @@ class BubbleSortTest < Minitest::Test
 
   # Horace
 
-  # Loop through our numbers, checking each pair in succession if a pair is out of order
-  # we need to swap left and right elements of the pair if we make a swap, we know
+
   # the list was not sorted at that point, so we should make another pass
   # If we reach the end of the list without encountering any "out of order pairs",
   # then good job us, it's sorted
@@ -32,6 +31,11 @@ class BubbleSortTest < Minitest::Test
     list = [2, 1]
     swap!(list, 0, 1)
     assert_equal [1,2], list
+  end
+
+  def test_it_can_swap_a_later_pair
+    assert_equal [1, 2, 3], bubble_sort([1, 3, 2])
+
   end
 
   # def test_it_returns_the_correct_value

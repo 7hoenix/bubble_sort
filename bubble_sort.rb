@@ -1,6 +1,6 @@
 def bubble_sort(list)
-  # loop through our numbers,
-  # checking each pair in succession
+# Loop through our numbers, checking each pair in succession if a pair is out of order
+# we need to swap left and right elements of the pair if we make a swap, we know
   if list[1] && list[0] > list[1]
     swap!(list, 0, 1)
 

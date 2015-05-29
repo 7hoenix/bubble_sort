@@ -1,6 +1,6 @@
-require 'minitest'
-require 'minitest/autorun'
-require_relative 'bubble_sort'
+require "minitest"
+require "minitest/autorun"
+require_relative "bubble_sort"
 
 class BubbleSortTest < Minitest::Test
 
@@ -16,13 +16,13 @@ class BubbleSortTest < Minitest::Test
     assert_equal [], bubble_sort([])
   end
 
-  def test_it_returns_the_correct_value
-    bubble = BubbleSort.new
-    input = [5, 3, 2, 4, 1]
-    assert_equal [1, 2, 3, 4, 5], bubble.sort_this(input)
-
-    # assert_equal 9, bubble.sort_this(input)
-  end
+  # def test_it_returns_the_correct_value
+  #   bubble = BubbleSort.new
+  #   input = [5, 3, 2, 4, 1]
+  #   assert_equal [1, 2, 3, 4, 5], bubble.sort_this(input)
+  #
+  #   # assert_equal 9, bubble.sort_this(input)
+  # end
 
 
 end

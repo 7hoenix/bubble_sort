@@ -16,6 +16,18 @@ class BubbleSortTest < Minitest::Test
     assert_equal [], bubble_sort([])
   end
 
+  def test_it_starts_with_a_single_element
+    assert_equal [1], bubble_sort([1])
+  end
+
+  def test_it_sorts_2_that_are_already_sorted
+    assert_equal [1, 2], bubble_sort([])
+  end
+
+  def test_it_sorts_2_that_are_out_of_order
+    assert_equal [2, 1], bubble_sort([])
+  end
+
   # def test_it_returns_the_correct_value
   #   bubble = BubbleSort.new
   #   input = [5, 3, 2, 4, 1]

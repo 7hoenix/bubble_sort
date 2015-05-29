@@ -1,12 +1,12 @@
 def bubble_sort(list)
-  # swapped = true
-  # while true
-  #   swapped = pass(list)
-  # end
+  swapped = true
+  while swapped
+    swapped = sort_pass(list)
+  end
   list
 end
 
-def pass(list)
+def sort_pass(list)
   list.each_index do |i|
     if list[i+1] && list[i] > list[i+1]
       swap!(list, i, i+1)

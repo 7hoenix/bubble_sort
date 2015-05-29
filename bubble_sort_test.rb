@@ -40,9 +40,9 @@ class BubbleSortTest < Minitest::Test
 
   def test_pass_returns_true_if_it_swapped_values
     list = [1,2,3]
-    assert_equal true, pass(list)
+    assert_equal false, sort_pass(list)
     list = [1,2,3]
-    refute pass(list)
+    refute sort_pass(list)
   end
 
   def test_sorts_long_list

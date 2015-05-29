@@ -1,7 +1,5 @@
 def bubble_sort(list)
-  swapped = true
-  while swapped
-    swapped = sort_pass(list)
+  while sort_pass(list)
   end
   list
 end

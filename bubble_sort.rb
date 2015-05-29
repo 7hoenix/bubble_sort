@@ -2,7 +2,7 @@ def bubble_sort(list)
   # loop through our numbers,
   # checking each pair in succession
   if list[1] && list[0] > list[1]
-    swap(0, 1)
+    swap!(0, 1)
     # left = list[0]
     # right = list[1]
     # list[0] = right
@@ -11,7 +11,7 @@ def bubble_sort(list)
   list
 end
 
-def swap(index_1, index_2)
+def swap!(index_1, index_2)
 
 end
 

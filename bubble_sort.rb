@@ -1,4 +1,12 @@
 def bubble_sort(list)
+  # loop through our numbers,
+  # checking each pair in succession
+  if list[1] && list[0] > list[1]
+    left = list[0]
+    right = list[1]
+    list[0] = right
+    list[1] = left
+  end
   list
 end
 

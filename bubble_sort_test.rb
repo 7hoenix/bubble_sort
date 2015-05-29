@@ -21,11 +21,11 @@ class BubbleSortTest < Minitest::Test
   end
 
   def test_it_sorts_2_that_are_already_sorted
-    assert_equal [1, 2], bubble_sort([])
+    assert_equal [1, 2], bubble_sort([1, 2])
   end
 
   def test_it_sorts_2_that_are_out_of_order
-    assert_equal [2, 1], bubble_sort([])
+    assert_equal [1, 2], bubble_sort([2, 1])
   end
 
   # def test_it_returns_the_correct_value

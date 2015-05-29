@@ -1,9 +1,11 @@
 def bubble_sort(list)
 # Loop through our numbers, checking each pair in succession if a pair is out of order
 # we need to swap left and right elements of the pair if we make a swap, we know
-  if list[1] && list[0] > list[1]
-    swap!(list, 0, 1)
+  list.each_index do |i|
 
+    if list[i+1] && list[i] > list[i+1]
+      swap!(list, i, i+1)
+    end
   end
   list
 end
@@ -15,8 +17,6 @@ def swap!(list, index_1, index_2)
   list[index_2] = left
 
 end
-
-
 
 
 # class BubbleSort
